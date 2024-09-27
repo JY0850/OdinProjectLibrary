@@ -95,6 +95,12 @@ header {
     grid-template-columns: repeat(4, 1fr); /* This will create 4 equal columns */
 }
 
+#bookButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
 #read {
     margin: 16px;
 }
