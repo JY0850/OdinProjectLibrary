@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    background-color: rgb(238, 238, 238);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 5px;
+}
+
+button {
+    background-color: #ffffff;
+    border: solid;
+    border-color: rgba(0, 0, 0, 0.246);
+    font-weight: 600;
+    font-size: 18px;
+    width: 190px;
+    padding: 5px 12px;
+    border-radius: 8px; 
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+    color: #333; 
+}
+
+dialog {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0.416);
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    flex-direction: column;
+    gap: 18px;
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(1px);
+}
+
+footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.book {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    height: 200px;
+    border-color: rgba(0, 0, 0, 0.306);
+    border-style: solid;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.book h2, .book h3, .book p {
+    margin: 15px;
+}
+
+.book h3 {
+    color: #000000c7;
+}
+
+.book p {
+    color:#000000ae;
+}
+
+#newBook {
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.416);
+    border-width: 2px;
+}
+
+#books {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 85%;
+    grid-template-columns: repeat(4, 1fr); /* This will create 4 equal columns */
+}
+
+#read {
+    margin: 16px;
+}

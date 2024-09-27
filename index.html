@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JY - 📚 My Library App 📚</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>📚 My Library App 📚</h1>
+    </header>
+    <dialog id="newBookDialog">
+      <h2>Add a new book! 📔</h2>
+      <div>
+        <label for="name">Book Name:</label>
+        <input type="text" id="name" name="name" required/>
+      </div>
+      <div>
+        <label for="author">Book Author:</label>
+        <input type="text" id="author" name="author" required/>
+      </div>
+      <div>
+        <label for="read">Read?</label>
+        <input type="checkbox" id="read" name="read" />
+      </div>
+      <div id="dialogButtons">
+        <button type="button" id="closeDialog">Close</button>
+        <button type="submit" id="submitDialog">Submit</button>
+      </div>
+    </dialog>
+    <div id="books"></div>
+    <button id="newBook">
+      <p>+ NEW BOOK 🔥</p>
+    </button>
+    <footer>
+      <p>Developed by <a href="https://tech.withjasony.com/">Jason Yee</a>.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
